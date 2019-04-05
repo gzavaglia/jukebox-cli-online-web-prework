@@ -37,4 +37,12 @@ def play(songs)
     end
   end #end if string 
   end #end songs each 
+  
+  def exit_jukebox
+    puts "Goodbye"
+  end 
+  
+  def run
+    
+  end #end 
 end #play 
