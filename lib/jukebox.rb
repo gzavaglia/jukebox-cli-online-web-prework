@@ -37,12 +37,21 @@ def play(songs)
     end
   end #end if string 
   end #end songs each 
+  end #end play 
   
   def exit_jukebox
     puts "Goodbye"
   end 
   
   def run
-    
-  end #end 
-end #play 
+    help #call the help method 
+    puts "Please enter a command:"
+    input = gets.chomp
+    #unless input = exit, program keeps runnig
+    if input != "exit"
+      puts = "Please enter a command:"
+      input = gets.chomp
+    else 
+      exit
+    end #end if 
+  end #run  
