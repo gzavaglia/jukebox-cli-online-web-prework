@@ -47,7 +47,7 @@ def play(songs)
     help #call the help method 
     puts "Please enter a command:"
     input = gets.chomp
-    #unless input = exit, program keeps runnig
+  
     unless input == "exit"
       puts = "Please enter a command:"
       input = gets.chomp
