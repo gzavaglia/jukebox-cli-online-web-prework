@@ -43,7 +43,7 @@ def play(songs)
     puts "Goodbye"
   end 
   
-  def run
+  def run(songs)
     help #call the help method 
     puts "Please enter a command:"
     input = gets.chomp
