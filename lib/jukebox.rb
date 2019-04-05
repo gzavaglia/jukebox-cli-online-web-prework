@@ -48,10 +48,18 @@ def play(songs)
     puts "Please enter a command:"
     input = gets.chomp
     #unless input = exit, program keeps runnig
-    if input != "exit"
+    unless input == "exit"
       puts = "Please enter a command:"
       input = gets.chomp
-    else 
-      exit
-    end #end if 
+    end #unless
+    if input == "help"
+      help
+    elsif input == "list"
+      list
+    elsif input == "play"
+      play
+    elsif input == "exit"
+      exit_jukebox
+      break
+    end #end if cases  
   end #run  
